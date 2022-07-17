@@ -1,1 +1,103 @@
+ :root{
+     --theme: rgb(29, 30, 32);
+     --small-background: rgb(46, 46, 51);
+     --color-smalltext: rgb(218, 218, 219);
+     --color-bigtext: rgb(155, 156, 157);
+     --border: rgb(51, 51, 51);
+     --code-bg: rgb(55, 56, 62);
 
+ }
+
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body{
+     display: flex;
+     justify-content: center;
+     min-height: 100vh;
+     background: var(--theme);
+ }
+
+ .navigation{
+     position: relative;
+     width: 350px; // 70 * 5 = 350
+     height: 70px;
+ }
+
+ .navigation ul{
+     display: flex;     
+ }
+ .navigation ul li{
+      position: relative;
+      list-style: none;
+      width: 70px;
+      height: 70px;
+      z-index: 1;
+  }
+ .navigation ul li a{
+     position: relative;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     color: var(--color-smalltext);
+     text-align: center;
+ }
+ .navigation ul li a .icon{
+     position: relative;
+     line-height: 75px;
+     text-align: center;
+     transition: 0.5s;
+     font-size: 30px;
+ }
+ .navigation ul li.active a .icon{
+     font-size: 20px;
+     transform: translateY(-6px);
+ }
+ .navigation ul li a.text{
+     position: absolute;
+     font-size: 12px;
+     color: var(--color-smalltext);
+     bottom: 20px;
+     font-weight: 400;
+     transition: 0.25s;
+     text-transform: uppercase;
+     transform: scale(0);
+ }
+ .navigation ul li.active a.text{
+     transform: scale(1);
+ }
+ .indicator{
+     position: absolute;
+     left: 0;
+     width: 70px;
+     height: 70px;
+     border-radius: 10px;
+     transition: 0.5s;
+ }
+ .navigation ul li a:nth-child(1).active ~ indicator{
+     background: var(--border);
+     box-shadow: 0px 15px 25px var(--border); // đổi màu viền
+     transform: translateX( calc( 70px * 0 ) );
+ }
+  .navigation ul li a:nth-child(2).active ~ indicator{
+     background: var(--border);
+     box-shadow: 0px 15px 25px var(--border); // đổi màu viền 
+     transform: translateX( calc( 70px * 1 ) );
+ }
+  .navigation ul li a:nth-child(3).active ~ indicator{
+     background: var(--border);
+     box-shadow: 0px 15px 25px var(--border); // đổi màu viền
+     transform: translateX( calc( 70px * 2 ) );
+ } .navigation ul li a:nth-child(4).active ~ indicator{
+     background: var(--border);
+     box-shadow: 0px 15px 25px var(--border); // đổi màu viền
+     transform: translateX( calc( 70px * 3 ) );
+ }
+  .navigation ul li a:nth-child(5).active ~ indicator{
+     background: var(--border);
+     box-shadow: 0px 15px 25px var(--border); // đổi màu viền
+     transform: translateX( calc( 70px * 4 ) );
+ }
