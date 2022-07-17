@@ -77,26 +77,26 @@
      border-radius: 10px;
      transition: 0.5s;
  }
- .navigation ul li a:nth-child(1).active ~ indicator{
+ .navigation ul li:nth-child(1).active ~ .indicator{
      background: var(--border);
      box-shadow: 0px 15px 25px var(--border); // đổi màu viền
      transform: translateX( calc( 70px * 0 ) );
  }
-  .navigation ul li a:nth-child(2).active ~ indicator{
+  .navigation ul li:nth-child(2).active ~ .indicator{
      background: var(--border);
      box-shadow: 0px 15px 25px var(--border); // đổi màu viền 
      transform: translateX( calc( 70px * 1 ) );
  }
-  .navigation ul li a:nth-child(3).active ~ indicator{
+  .navigation ul li:nth-child(3).active ~ .indicator{
      background: var(--border);
      box-shadow: 0px 15px 25px var(--border); // đổi màu viền
      transform: translateX( calc( 70px * 2 ) );
- } .navigation ul li a:nth-child(4).active ~ indicator{
+ } .navigation ul li:nth-child(4).active ~ .indicator{
      background: var(--border);
      box-shadow: 0px 15px 25px var(--border); // đổi màu viền
      transform: translateX( calc( 70px * 3 ) );
  }
-  .navigation ul li a:nth-child(5).active ~ indicator{
+  .navigation ul li:nth-child(5).active ~ .indicator{
      background: var(--border);
      box-shadow: 0px 15px 25px var(--border); // đổi màu viền
      transform: translateX( calc( 70px * 4 ) );
