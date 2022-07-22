@@ -15,6 +15,11 @@ Trong Oracel thì co hàm build-in, SELECT phải chỉ định đến 1 cái ta
 Đôi khi hacker còn dùng #
 
 ============
-Phải xác định cột trả về kiểu string đã
-sau đó ms select
-
+Cách khai thác SQLi:
+Xác định cột bị hỏng.
+Kiểm tra xem cái nào trả về string.
+Kiểm tra version của nó để lập phương pháp tấn công
+Lên gg tra infor của nó.
+Tìm table rồi lưu lại
+Tìm column
+Tìm passwd, và uname
