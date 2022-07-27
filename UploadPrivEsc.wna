@@ -1,0 +1,12 @@
+*****Exloit kernel:
+
+The Kernel exploit methodology is simple;
+
+-Identify the kernel version
+-Search and find an exploit code for the kernel version of the target system
+-Run the exploit
+
+*****
+Ngoài ra các bạn phải sửa etc/host: di cư
+dev/null: để khỏi rối
+find / -perm -u=s -type f tìm fife SUID thôi
