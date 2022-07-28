@@ -8,3 +8,6 @@ Source: Tryhahckme
 - Passphrase: ko giống key, nó để bảo vệ key :
 - Asymmetric encryption: ma hóa bất đối xứng, sử dụng key khác nhau để giải và mã hóa
 - Symmetric encryption: mã hóa đối ứng, xử dụng key giống nhau
+https://github.com/RsaCtfTool/RsaCtfTool
+https://github.com/RsaCtfTool/RsaCtfTool
+Toai còn nhiều tool lắm đợi rảnh thì kết hợp mấy kho kia lại
