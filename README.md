@@ -1,5 +1,5 @@
 # GitKon-git
-- blog của Spycio Breach Lab to help nood
+- blog của Spycio Breach Lab 
 # Tutorial
 - Ctf
 - thm
