@@ -23,3 +23,10 @@ các bạ cso thể dùng scp opt/linpeas.sh admin@xxx.xxx.xx.x :etc/shadow đ�
 sửa quyền file bằng chmod +x linpeas
 sau đó chạy thôi.
 Trong linpeas khi chạy nó cho màu sắc đây, chú ý đọc hiểu :>
+Đôi khi bạn tìm thấy id_rsa private key :> đây là điều nguy hiểm, các bạn có thể login đc
+Copy nó ra máy của các bạn và lưu vô tệp attack.
+phân quyền 600: chmod 600 attack.
+login lại vô ssh -i attack admin2@xxx.xxx.xx.x
+nếu có mật khẩu thì dùng john the ripper thay vì hydra, vì hydra là brute từ wordlist còn jtr thì brute từng từ.
+nó trả về hash rồi thì dùng wordls rockyou.txt để so sánh mã hash
+Ko khó nhưng hơi cực để tư duy, nếu bạn là SK như tôi thì chúc mừng, chúng ta giống nhau
