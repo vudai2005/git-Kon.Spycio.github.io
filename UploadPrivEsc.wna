@@ -20,3 +20,6 @@ You can transfer the exploit code from your machine to the target system using t
 https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS dùng nó đi
 Một khi bạn đã ssh hay xâm nhập được vô server nó thì đây là lúc các bạn trở thành hắc cơ leo thang đặc quyền. THấy linpeas trên ko, wget về máy đi.
 các bạ cso thể dùng scp opt/linpeas.sh admin@xxx.xxx.xx.x :etc/shadow để truyền file qua :>
+sửa quyền file bằng chmod +x linpeas
+sau đó chạy thôi.
+Trong linpeas khi chạy nó cho màu sắc đây, chú ý đọc hiểu :>
