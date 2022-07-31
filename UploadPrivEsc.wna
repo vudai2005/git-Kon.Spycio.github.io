@@ -18,4 +18,4 @@ Be sure you understand how the exploit code works BEFORE you launch it. Some exp
 Some exploits may require further interaction once they are run. Read all comments and instructions provided with the exploit code.
 You can transfer the exploit code from your machine to the target system using the SimpleHTTPServer Python module and wget respectively.
 https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS dùng nó đi
-
+Một khi bạn đã ssh hay xâm nhập được vô server nó thì đây là lúc các bạn trở thành hắc cơ leo thang đặc quyền. THấy linpeas trên ko, wget về máy đi.
