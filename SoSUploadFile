@@ -1,1 +1,2 @@
-Trước khi tiến hành upload php hay nhưng file tương tự, hãy cố tìm hiểu cơ chế hoạt động của nó, loại tệp nào được chấp nhận, các bộ lọc khác nhau.
+Trước khi tiến hành upload php hay nhưng file tương tự, hãy cố tìm hiểu cơ chế hoạt động của nó, loại tệp nào được chấp nhận, các bộ lọc khác nhau, xem upload nó chạy đến đâu.
+Dùng burpsuit để xem rõ hơn
