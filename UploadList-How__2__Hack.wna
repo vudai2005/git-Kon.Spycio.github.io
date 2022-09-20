@@ -1,0 +1,38 @@
+Rất dễ thôi :V 
+Thông thường 1 web trường đại học dính SQli login thì dùng burp bắt request và lưu vô file X, và sqlmap --> lục passwd và hên thì RCE được nó.
+Tuy nhiên điều này rất vớ vẩn vì tui chả thích làm việc xấu UwU. Thay vào đó dùng để nâng cao tay nghề thì tốt hơn.
+T không thích WhiteHat với BlackHat :V Im just normal
+Bài viết này sẽ cũng cấp cho bạn các công cụ cần thiết của hắc cơ. Một số cái tui share nhưng đừng quan tâm đến nó
+-------------------------------------------------------------------
+Thứ nhất: enumeration web.
+-Tool: nmap-- dùng để scan dịch vụ với các port của nó :> ai biết được một mariadb dùng username default hay 1 ftp login anonymous lại có thể bị rce :v
+       burp suit: cái này tui dùng để bắt và thay đổi các request :v dùng nhiều việc lắm
+       subdomain: dùng để tìm subdomain, biết đâu lại như trường P có subdomain dễ bị SQli :)(
+       google dorking: tìm kiếm thông tin hữu dụng về quản trị viên, các file bí mật, id_rsa,... rất nhiều
+       dirsearch: cái này các bạn có thể kết hợp với SecLists để tìm path :V Giống như nơi con bọ báo cáo để lộ trang X có thể thấy được công văn hay trường K :)(
+       curl: phải có kinh nghiệm về cái này, để gửi data và nhận data. Vd SSRL, CLRF,...
+       dig: liên quan đến mạng :V giống như anh C để lộ một domain ẩn :V
+Thứ 2: lập phương pháp tấn công
+- Cái này có rất nhiều dạng tấn công, một sô cái cụ thể tôi hay chơi và thấy.
+  + XSS: nó có thể có nhiều loại như dom, stored, self,..
+  + Sqli: buộc bạn phải có sự hiểu biết về nhiều loại database như maria, mongo...
+  + bypass Auth: một số dạng như thay đổi cookie thì vô được đấy :v 
+  + cmd injection: các bạn có thể truyền các câu lệnh trong linux :V có thể rce luôn
+  + xxe: cái này tui khá kém 
+  + SSTi:
+  +Brute-forcing
+Thứ 3: duy trì tấn công, backdoor :v
+- Tui không quan tâm nên vứt :V
+Thứ 4: Xóa dấu vết
+- Không liên quan nhưng với một scriptkidie như tui thì xóa nó rất là vớ vẩn, phải có một dấu hiệu chứ :))(
+- Nhưng đây là sai lầm, một khi không xóa thì bọn bọ nó phát hiện hoặc xem bài mình thì nó ấn nút report đấy :)( Đúng tác phong của bọ luôn, đánh ko lại là report 
+ngay =)
+- Một số xóa dấu vết: Fake ip/Vpn
+                      dùng nhiều nickname và đảm bảo chúng không có liên kết với nhau ( tui hay dùng kon-chan với Spycio nên dễ dàng đoán được cả 2 đều thuộc về tui)
+                      Không share tên mail, hay số điện thoại, địa chỉ,.. lung tung.
+                      không đặt mật khẩu dễ đoán :V
+                      Xóa hết log khi đăng nhập vô máy bọn bọ: history, log,..
+Tất nhiên nghiệp vụ nó sẽ ra đấy, nên kiểm soát tool của mình nhé chứ một lượng lớn request vớ vẩn đến thì thk nào cũng sẽ check và block thôi :V
+Và nếu những con bọ có đọc được thì `HACK TÔI THỬ Đi`, đừng làm 3 cái trò vớ vẩn, tôi thấy nhiều rồi UwU
+Các hệ điều hành để chơi: Linux(không quan trọng kali hay jj, miễn là linux)
+                          Windows
