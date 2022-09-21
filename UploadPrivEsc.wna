@@ -31,3 +31,18 @@ login lại vô ssh -i attack admin2@xxx.xxx.xx.x
 nếu có mật khẩu thì dùng john the ripper thay vì hydra, vì hydra là brute từ wordlist còn jtr thì brute từng từ.
 nó trả về hash rồi thì dùng wordls rockyou.txt để so sánh mã hash
 Ko khó nhưng hơi cực để tư duy, nếu bạn là SK như tôi thì chúc mừng, chúng ta giống nhau
+------------------------------------
+Leo thang:
+Kernel có vuln
+History không xóa
+lưu file dễ bị phát hiện,
+không phân quyền /etc/shadow
+ssh keys
+find / -name id_rsa 2> /dev/null
+find / -name authorized_keys 2> /dev/null
+sudo -l (Shell Escaping)
+sudo apache2 -f /etc/shadow (Abusing Intended Functionality)
+exploit.c => (LD_PRELOAD)
+Suid
+
+
