@@ -8,4 +8,4 @@ Nó sẽ không hoàn hảo ngay bây giờ nhưng các bạn có thể trông �
 - forensic
 - osint
 - Privilege Escalation
-<script src="https://tryhackme.com/badge/816004"></script>
+![hello](https://tryhackme.com/badge/816004)
