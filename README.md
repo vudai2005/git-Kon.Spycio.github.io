@@ -8,4 +8,5 @@ Nó sẽ không hoàn hảo ngay bây giờ nhưng các bạn có thể trông �
 - forensic
 - osint
 - Privilege Escalation
-- ![hello](https://tryhackme-badges.s3.amazonaws.com/hackervnn40.png)
+# About me
+ ![hello](https://tryhackme-badges.s3.amazonaws.com/hackervnn40.png)
